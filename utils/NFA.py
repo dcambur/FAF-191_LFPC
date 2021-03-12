@@ -18,10 +18,7 @@ In this module a NFA is defined as follows
 
 # NFA to DFA
 def convert_to_dfa(nfa: dict) -> dict:
-    """ Returns a DFA that reads the same language of the input NFA.
-    :param dict nfa: input NFA.
-    :return: *(dict)* representing a DFA
-    """
+    """ Returns a DFA that reads the same language of the input NFA."""
     dfa = {
         'alphabet': nfa['alphabet'].copy(),
         'initial_state': None,

@@ -52,7 +52,7 @@ class Graph:
 
 
 def convert_to_networkx(rules):
-    G = nx.Graph()
+    G = nx.DiGraph()
     for i in rules:
         G.add_edge(*(i[0], i[1]), label=f"{i[2]}", font_color="red")
     return G
