@@ -1,0 +1,9 @@
+S1 -> B A | B
+S -> A B | B | B S1
+A -> A S | S | A A1 | A1 | d
+A2 -> B A | B
+B -> A | a | B S
+D -> A B1 | S0 B
+S0 -> S | b
+A1 -> S0 A2
+B1 -> S0 B
